@@ -4,6 +4,10 @@ Aplicação web de gerenciamento de tarefas desenvolvida em **Angular** como ati
 
 ---
 
+## Imagens
+
+![Demonstração da Aplicação](./img/img_localhost.gif)
+
 ## 🎯 Sobre o Projeto
 
 O objetivo desta aplicação é praticar os conceitos fundamentais da arquitetura Angular:
