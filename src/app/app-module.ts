@@ -1,22 +1,22 @@
-import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common'; //  Para o *ngFor funcionar
+import { FormsModule } from '@angular/forms';     //  Para o [(ngModel)] funcionar
 
 import { AppRoutingModule } from './app-routing-module';
-import { App } from './app';
+import { AppComponent } from './app';            //  O ERRO ESTAVA AQUI (estava 'App' em vez de 'AppComponent')
 
 @NgModule({
   declarations: [
-    App
+    AppComponent     // 'AppComponent' aqui
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-  ],
-  bootstrap: [App]
+  providers: [],
+  bootstrap: [AppComponent]     // 'AppComponent' aqui
 })
 export class AppModule { }
